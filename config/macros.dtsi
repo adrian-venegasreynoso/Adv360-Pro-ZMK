@@ -2,13 +2,13 @@ macro_greater_than: macro_greater_than{
 compatible = "zmk,behavior-macro";
 label = "macro_greater_than";
 #binding-cells = <0>;
-bindings = <&kp B>;
+bindings = <&macro_press &kp LCTRL &kp LSHFT>, <&macro_tap &kp U &kp 3 &kp E>, <&macro_release &kp LCTRL &kp LSHFT>;
 };
 macro_less_than: macro_less_than{
 compatible = "zmk,behavior-macro";
 label = "macro_less_than";
 #binding-cells = <0>;
-bindings = <&kp A>;
+bindings = <&macro_press &kp LCTRL &kp LSHFT>, <&macro_tap &kp U &kp 3 &kp C>, <&macro_release &kp LCTRL &kp LSHFT>;
 };
 macro_macro_paste: macro_macro_paste{
 compatible = "zmk,behavior-macro";
